@@ -15,7 +15,7 @@ int main(){
     cin >> NomVendedor >> SalFixo >> TotVendas;
     TotMes= SalFixo + TotVendas * 0.15;
     cout << fixed << setprecision(2);
-    cout << "TOTAL = " << TotMes << endl;
+    cout << "TOTAL = R$ " << TotMes << endl;
 
     return 0;
 }
