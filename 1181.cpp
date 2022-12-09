@@ -3,8 +3,8 @@
 #include <string>
 #include <cmath>
 #include <stdlib.h>
-#define LI 3
-#define CO 3
+#define LI 12
+#define CO 12
 
 //Linha na Matriz
 
@@ -15,8 +15,8 @@ int main(){
     cout << fixed << setprecision(1);
     int linha;
     char operacao;
-    int m[LI][CO];
-    int result=0;
+    float m[LI][CO];
+    float result=0;
     cin >> linha;
     cin >> operacao;
 
@@ -25,6 +25,16 @@ int main(){
             cin >> m[i][j];
         }
     }
+
+    if(operacao == 'S'){
+        for(int i=0; i<LI; i++){
+        for(int j=0; j<CO; j++){
+           if(i == linha){
+            result = result + m[i][j];
+           }
+        }
+      }
+   }
 
     if(operacao == 'M'){
         for(int i=0; i<LI; i++){
@@ -36,7 +46,7 @@ int main(){
       }
       result = result / CO;
    }
-   cout << "result = " << result << endl;
+   cout  << result << endl;
 
    return 0;
 }
