@@ -15,6 +15,8 @@ int main(){
     int i, j;
     char op[5];
 
+    cout << fixed << setprecision(1);
+
     cin >> op;
     for(i=0; i<12; i++){
         for(j=0; j<12; j++){
