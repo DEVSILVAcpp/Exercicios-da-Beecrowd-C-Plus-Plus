@@ -36,5 +36,5 @@ int main(){
         cout << soma << endl;
     }
 
-return 0;
+    return 0;
 }
